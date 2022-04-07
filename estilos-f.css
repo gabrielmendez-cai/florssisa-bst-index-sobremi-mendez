@@ -19,6 +19,24 @@ background:linear-gradient( #af6759,#fffdfd);;
     display: flex;
     align-items: center;
 }
+.row-propia img{
+    transform: translate(0px,0px);
+}
+.row-propia img:hover{
+transform: translate(250px,0px);
+transition: 1s;
+position: relative;
+z-index: 1;
+
+}
+.row-propia iframe{
+    transform: translate(0px,0px);
+}
+.row-propia iframe:hover{
+    transform: translate(-250px,0px);
+    transition: 1s;
+}
+
 
 .animate__backInLeft{
     animation-duration: 3s;
@@ -91,7 +109,12 @@ background:linear-gradient( #af6759,#fffdfd);;
         text-transform: uppercase;
         align-items: center;
         font-family: 'Bitter', serif;
+
     }
+    .animate__flip{
+        animation-delay: 2s;
+    }
+
 .titulo-s{
     color: #636059;
     text-align: center;
@@ -105,8 +128,10 @@ background:linear-gradient( #af6759,#fffdfd);;
     font-family: 'Bitter', serif;   
     text-transform: uppercase;
     color: #636059;
-
+   
 }
+
+
 /*medias Q sobre mi*/
 @media screen and (max-width:768px){
 .navbar-propia{
